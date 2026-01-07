@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #hed{
+            background-color:burlywood;
+            text-align: center;
+            font-size: 30px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 100px;
+        }
+        #hed:hover{
+            background-color:darkgoldenrod;
+        }
+        .form{
+
+            background-color: rgb(172, 123, 63);
+            padding: 20px;
+            margin:40px auto;
+            /* margin-bottom: 20%; */
+            width: 350px;
+            border-radius: 5px;
+            border: 2px solid #ccc;
+        }
+        label{
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input{
+            width: 100%;
+            padding: 4px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius:5px;
+        }
+        input[type="submit"]{
+            background-color: #333;
+            color: white;
+            border:2px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover{
+            background-color: rgb(51, 87, 118);
+        }
+
+        .navbar a{
+            text-decoration: none;
+            color:#3b2f2f;
+            margin: 0 15px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .navbar{
+
+            text-align: center;
+            padding: 15px;
+            
+        }
+        .navbar a:hover{
+            color: #000;
+        text-decoration: underline;
+        }
+        .navbar a.active{
+            color:#000;
+        }
+    </style>
+</head>
+<body style="background-color:bisque;">
+    <nav class="navbar">
+            
+                <a href="main.html" class="active" aria-current="page">Home</a></li>
+                <a href="wiki.html">Wiki-Page</a></li>
+                <a href="my_projects.html">My Projects</a></li>
+                <a href="contact.html">Contact me</a></li>
+            
+        </nav>
+    <main>
+    <h3 id="hed">Contact Me!</h3>
+    
+    <section class="form">
+        <form>
+            <label>Enter Name: </label>
+            <input type="text"id="name" placeholder="Enter your Full Name: "><br>
+            <label>Enter email address: </label>
+            <input type="email"id="email" placeholder="Enter your email address: "><br>
+            <label>Your Query: </label>
+            <input type="text"id="query" placeholder="Type your Query "><br>
+
+            <input type="submit" id="submit" placeholder="Submit">
+
+        </form>
+    </section>
+    </main>
+</body>
+</html>
